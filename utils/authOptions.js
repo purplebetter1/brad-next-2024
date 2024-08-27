@@ -27,6 +27,7 @@ export const authOptions = {
       if (!userExists) {
         // truncate user name if too long
         const username = profile.name.slice(0, 20);
+
         await User.create({
           email: profile.email,
           username: username,
@@ -41,7 +42,7 @@ export const authOptions = {
       // Get user from db
       const user = await User.findOne({ email: session.user.email });
       // Assign user id from session
-      session.user.id = user._id.toString;
+      session.user.id = user._id.toString();
       // return session
       return session;
     },
