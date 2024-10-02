@@ -19,9 +19,7 @@ async function getUnreadMessageCount() {
     read: false,
   });
 
-  console.log(`The unread message count is ${count}`);
-
-  return count;
+  return { count };
 }
 
 export default getUnreadMessageCount;
