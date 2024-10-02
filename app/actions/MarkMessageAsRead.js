@@ -21,7 +21,7 @@ async function MarkMessageAsRead(messageId) {
 
   // Verify ownership
   if (message.recipient.toString() !== userId) {
-    throw new Error("Unauthorized");
+    throw new Reponse("Unauthorized", { status: 401 });
   }
 
   message.read = !message.read;

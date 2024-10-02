@@ -24,7 +24,7 @@ const PropertySearchForm = () => {
       onSubmit={handleSubmit}
     >
       <div className="w-full md:w-3/5 md:pr-2 mb-4 md:mb-0">
-        <label for="location" className="sr-only">
+        <label htmlFor="location" className="sr-only">
           Location
         </label>
         <input
@@ -37,7 +37,7 @@ const PropertySearchForm = () => {
         />
       </div>
       <div className="w-full md:w-2/5 md:pl-2">
-        <label for="property-type" className="sr-only">
+        <label htmlFor="property-type" className="sr-only">
           Property Type
         </label>
         <select
