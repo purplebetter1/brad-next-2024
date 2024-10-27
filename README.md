@@ -1,4 +1,4 @@
-Available live at https://brad-property-pulse.vercel.app/
+Available live at https://brad-next-2024.vercel.app
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
